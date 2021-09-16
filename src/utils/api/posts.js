@@ -3,7 +3,7 @@ import axios from 'axios';
 export const apiPosts = () => {
   return axios({
     method: 'GET',
-    url: `${process.env.API_URL}/posts`,
+    url: `${process.env.REACT_APP_API_URL}/posts`,
     headers: {
       ContentType: 'application/json',
       Accept: 'application/json',
@@ -14,7 +14,7 @@ export const apiPosts = () => {
 export const apiPostDetail = (postId) => {
   return axios({
     method: 'GET',
-    url: `${process.env.API_URL}/posts/${postId}`,
+    url: `${process.env.REACT_APP_API_URL}/posts/${postId}`,
     headers: {
       ContentType: 'application/json',
       Accept: 'application/json',
@@ -25,7 +25,7 @@ export const apiPostDetail = (postId) => {
 export const apiPostDetailComments = (postId) => {
   return axios({
     method: 'GET',
-    url: `${process.env.API_URL}/posts/${postId}/comments`,
+    url: `${process.env.REACT_APP_API_URL}/posts/${postId}/comments`,
     headers: {
       ContentType: 'application/json',
       Accept: 'application/json',
