@@ -18,7 +18,7 @@ const Post = (props) => {
         <PostCardLoader count={6} />
       ) : (
         props.getPostReducer.item.map((item) => {
-          return <PostCard body={item.body} title={item.title} />;
+          return <PostCard key={item.id} item={item} />;
         })
       )}
     </div>
