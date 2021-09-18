@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from 'react';
 
 import { getPostDetail } from '../../../redux/middleware/post/postDetail.middleware';
-import PostCardLoader from '../cardLoader';
+import PostCardLoader from '../list/cardLoader';
 
 import PostDetailCard from './card';
 

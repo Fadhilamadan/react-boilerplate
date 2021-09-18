@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from 'react';
 
-import { getPost } from '../../redux/middleware/post/post.middleware';
+import { getPost } from '../../../redux/middleware/post/post.middleware';
 
 import PostCard from './card';
 import PostCardLoader from './cardLoader';

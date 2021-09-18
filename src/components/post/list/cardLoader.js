@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { countLoader } from '../../utils/func/array';
+import { countLoader } from '../../../utils/func/array';
 
 import ContentLoader from 'react-content-loader';
 

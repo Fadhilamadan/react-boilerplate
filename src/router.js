@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Post from './components/post';
+import Post from './components/post/list';
 import PostDetail from './components/post/detail';
 
 import { Route, Switch } from 'react-router-dom';
