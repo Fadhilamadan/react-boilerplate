@@ -1,9 +1,9 @@
 import React, { useLayoutEffect } from 'react';
 
 import { getPostDetail } from '../../../redux/middleware/post/postDetail.middleware';
-import PostCardLoader from '../list/cardLoader';
 
 import PostDetailCard from './card';
+import PostCardLoader from './cardLoader';
 
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
