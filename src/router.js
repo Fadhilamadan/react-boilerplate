@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Post from './components/post';
+import PostDetail from './components/post/detail';
 
 import { Route, Switch } from 'react-router-dom';
 
@@ -10,6 +11,9 @@ const Router = () => {
       <Switch>
         <Route exact path="/">
           <Post />
+        </Route>
+        <Route exact path="/post/:postId">
+          <PostDetail />
         </Route>
       </Switch>
     </div>
