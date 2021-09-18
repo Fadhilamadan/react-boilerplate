@@ -14,7 +14,7 @@ const Post = (props) => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      {!props.getPostReducer.isLoading ? (
+      {props.getPostReducer.isLoading ? (
         <PostCardLoader count={6} />
       ) : (
         props.getPostReducer.item.map((item) => {
