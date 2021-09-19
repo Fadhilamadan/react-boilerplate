@@ -4,15 +4,16 @@ import {
   isGetPostLoading,
   isGetPostSuccess,
 } from '../../action/post/post.action';
-import store from '../../store';
 
 export const getPost = () => {
-  store.dispatch(isGetPostLoading());
-  apiPosts()
-    .then((res) => {
-      store.dispatch(isGetPostSuccess(res.data));
-    })
-    .catch((err) => {
-      store.dispatch(isGetPostFailed());
-    });
+  return (dispatch) => {
+    dispatch(isGetPostLoading());
+    apiPosts()
+      .then((res) => {
+        dispatch(isGetPostSuccess(res.data));
+      })
+      .catch((err) => {
+        dispatch(isGetPostFailed());
+      });
+  };
 };

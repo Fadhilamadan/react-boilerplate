@@ -34,7 +34,7 @@ const mapState = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onGetPost: () => {
-      return dispatch(getPost);
+      return dispatch(getPost());
     },
   };
 };
