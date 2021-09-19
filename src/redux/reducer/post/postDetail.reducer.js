@@ -1,7 +1,7 @@
 import {
+  GET_POST_DETAIL_FAILED,
   GET_POST_DETAIL_LOADING,
   GET_POST_DETAIL_SUCCESS,
-  GET_POST_DETAIL_FAILED,
 } from '../../const';
 
 const initState = {

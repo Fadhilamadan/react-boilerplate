@@ -1,4 +1,4 @@
-import { GET_POST_LOADING, GET_POST_SUCCESS, GET_POST_FAILED } from '../../const';
+import { GET_POST_FAILED, GET_POST_LOADING, GET_POST_SUCCESS } from '../../const';
 
 export const isGetPostLoading = () => {
   return {

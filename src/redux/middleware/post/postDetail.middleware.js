@@ -1,8 +1,8 @@
 import { apiPostDetail } from '../../../utils/api/posts';
 import {
+  isGetPostDetailFailed,
   isGetPostDetailLoading,
   isGetPostDetailSuccess,
-  isGetPostDetailFailed,
 } from '../../action/post/postDetail.action';
 
 export const getPostDetail = (postId) => {
