@@ -7,7 +7,7 @@ import ContentLoader from 'react-content-loader';
 const PostCardLoader = (props) => {
   return countLoader(props.count).map(() => {
     return (
-      <div className="bg-white p-6 rounded-lg shadow-lg">
+      <div key="key" className="bg-white p-6 rounded-lg shadow-lg">
         <ContentLoader
           backgroundColor="#f3f3f3"
           foregroundColor="#ecebeb"
